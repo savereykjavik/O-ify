@@ -27,8 +27,6 @@ body {
   font-size: 1.2em;
   line-height: 1.2em;
   background: mintcream;
-  color: #475B62;
-  padding-top: 5em;
 }
  
 strong {
@@ -41,36 +39,52 @@ h1 {
   color: teal;
   font-size: 5.75em;
   margin-bottom: 0.6em;
-  margin-top: 1em;
+  margin-top: 1.7em;
+}
+
+h2 {
+  font-family: "Exo 2", "Helvetica Neue", Helvetica, sans-serif;
+  font-weight: 300;
+  font-size: 1em;
+  line-height: 1.2em;
 }
  
+h3 {
+  font-family: "Exo 2", "Helvetica Neue", Helvetica, sans-serif;
+  font-weight: 300;
+  font-size: 0.7em;
+  line-height: 1.2em;
+  color: gray;
+}
+
 p {
   margin-bottom: 0em;
 }
  
 .container {
-  background-image: url('backgroundsuperlight.bmp');
-  width: 80%;
-  max-width: 700px;
-  min-height: 500px;
+  background-image: url('backgroundCOREroundedtransp.bmp');
+  width: 100%;
+  max-width: 600px;
+  max-height: 600px;
   position: absolute;
-  top: 40%;
+  top: 50%;
   left: 50%;
+  margin-top: auto;
   margin-right: -50%;
   transform: translate(-50%, -50%);
 }
 
 .app {
-  max-width: 650px;
-  min-height: 500px;
-  position: absolute;
-  padding-left: 70px;
+  max-width: 600px;
+  min-height: 415px;
+  padding-left: 95px;
 }
 
 #input {
   width: 550px;
+  height: 20px;
   font-family: "Helvetica Neue", Helvetica, sans-serif;
-  font-size: 12pt;
+  font-size: 14pt;
   border-width: 1px;
   padding: 10px;
   font-weight: 300;
@@ -79,25 +93,18 @@ p {
 #otext {
   width: 550px;
   padding-left: 10px;
-  position: absolute;
 }
-
 
 .otext {
   width: 550px;
   padding: 10px;
 }
  
-@media all and (max-width: 500px) {
-  h2 {
-    padding-left: 10px;
+
+footer { 
+    display: block;
     text-align: center;
-  }
-  .container {
-    width: 100%;
-  }
-}
- 
-#graphic {
-  margin: 0 auto;
+    padding-left: 10px;
+    padding-bottom: 60px;
+
 }

@@ -1,44 +1,68 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <meta charset="UTF-8">
-  <link rel="stylesheet" href="base.css">
+  <head>
+    <STYLE>
+      <!--
+      A{text-decoration:none}
+      -->
+    </STYLE>
 
-<script src="latinise.min.js"></script>
-<script type="text/javascript">
-    
-    function oify() {
-        var oldstring = document.getElementById("input").value;
-        var newString = oldstring.latinise().replace(/[aueiy]/g, "o");
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="base.css">
 
-        console.log(oldstring);
-        console.log(newString);
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+      ga('create', 'UA-55821389-1', 'auto');
+      ga('send', 'pageview');
+    </script>
+
+    <script src="latinise.min.js"></script>
+   
+    <script type="text/javascript">
+        
+        function oify() {
+            var oldstring = document.getElementById("input").value;
+            var newString = oldstring.latinise().replace(/[aueiy]/g, "o");
+
+            console.log(oldstring);
+            console.log(newString);
+
+            document.getElementById("otext").innerHTML = newString;
+          };
+
+    </script>
+
+  </head>
 
 
-        document.getElementById("otext").innerHTML = newString;
-      };
+  <body>
 
-</script>
+    <div class="container">
 
-</head>
-
-
-<body>
-
-<div class="container">
-    
-    <div class="app">
+      <p align=right><a href="https://twitter.com/share" class="twitter-share-button" data-url="http://bit.ly/1od5rLA" data-text="O lovo o-ofo! - I love O-ify!" data-size="large" data-count="none" data-hashtags="oify">Tweet</a></p>
       
-      <h1>O-ify!</h1>
-      <h2>Missed the latest language? </br> DON'T WORRY - We'll translate and write it out for you:</h2></br>
-      <input type="text" id="input" onkeyup="oify()" placeholder='translate this text to O for me'/></br></br>
-      <div id="otext"></div>
-    
-    </div>
+      <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');
+      </script>
+
+        <div class="app">
+          
+          <h1>O-ify!</h1>
+          <h2>Missed the latest language? </br> DON'T WORRY - We'll translate and write it out for you:</h2></br>
+          <input type="text" id="input" onkeyup="oify()" placeholder='translate this text to O for me'/></br></br>
+          <div id="otext"></div>
+        
+        </div>
+
+            <footer>
+              <h3>Caroline Thordenberg - Digital Data Strategy student @HyperIsland Stockholm</br>
+              <strong>mail:</strong> caroline.thordenberg [ @ ] hyperisland [ . ] com, <strong>twitter:</strong> @thordenberg, <strong>github:</strong> savereykjavik <strong>more projects & shop:</strong> <a href="http://www.silvertheories.tictail.com" style="color:gray">www.silvertheories.tictail.com</a></h3>
+            </footer>
   
-</div>
+    </div>
 
-
-</body>
+  </body>
 
 </html>
