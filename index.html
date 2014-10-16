@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="base.css">
+
+<script src="latinise.min.js"></script>
+<script type="text/javascript">
+    
+    function oify() {
+        var oldstring = document.getElementById("input").value;
+        var newString = oldstring.latinise().replace(/[aueiy]/g, "o");
+
+        console.log(oldstring);
+        console.log(newString);
+
+
+        document.getElementById("otext").innerHTML = newString;
+      };
+
+</script>
+
+</head>
+
+
+<body>
+
+<div class="container">
+
+  <h1>O-ify!</h1>
+  <h2>Missed the latest language? </br> DON'T WORRY - We'll translate and write it out for you:</h2></br>
+  <div>
+    <input type="text" id="input" onkeyup="oify()" placeholder='translate this text to O for me'/></br></br>
+  </div>
+
+  <div id="otext"></div>
+
+</div>
+
+</body>
+
+</html>
