@@ -81,6 +81,7 @@ p {
   max-width: 600px;
   min-height: 415px;
   padding-left: 95px;
+  margin-bottom: 40px;
 }
 
 #input {
