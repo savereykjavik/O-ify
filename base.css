@@ -40,7 +40,8 @@ h1 {
   font-weight: 700;
   color: teal;
   font-size: 5.75em;
-  margin-bottom: 0.9em;
+  margin-bottom: 0.6em;
+  margin-top: 1em;
 }
  
 p {
@@ -48,14 +49,22 @@ p {
 }
  
 .container {
+  background-image: url('backgroundsuperlight.bmp');
   width: 80%;
-  max-width: 1200px;
-  min-width: 600px;
+  max-width: 700px;
+  min-height: 500px;
   position: absolute;
-  top: 50%;
+  top: 40%;
   left: 50%;
   margin-right: -50%;
   transform: translate(-50%, -50%);
+}
+
+.app {
+  max-width: 650px;
+  min-height: 500px;
+  position: absolute;
+  padding-left: 70px;
 }
 
 #input {
