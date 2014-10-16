@@ -72,14 +72,14 @@ p {
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
+  transform: translate(-50%, -54%);
   margin-top: auto;
   margin-right: -50%;
 }
 
 .app {
   max-width: 600px;
-  min-height: 415px;
+  min-height: 380px;
   padding-left: 95px;
   margin-bottom: 40px;
 }
