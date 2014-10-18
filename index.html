@@ -47,7 +47,7 @@
         
         function oify() {
             var oldstring = document.getElementById("input").value;
-            var newString = oldstring.latinise().replace(/[aueiyAUEIY]/g, "o");
+            var newString = oldstring.latinise().replace(/[aueiy]/g, "o").replace(/[AUEIY]/g, "O");
 
             console.log(oldstring);
             console.log(newString);
